@@ -11,6 +11,7 @@ body {
     font-style: italic;
     line-height: 2em;
     color: black;
+    font-size: large;
 }
 
 #contentColumn {
@@ -34,6 +35,6 @@ body {
     #mainPage {
         display: grid;
         grid-template-areas: "links content";
-        grid-auto-columns: 20% auto;
+        grid-auto-columns: 20% 65%;
     }
 }
