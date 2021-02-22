@@ -1,0 +1,39 @@
+body {
+    background: slategray;
+}
+
+#linkColumn {
+    grid-area: links;
+    margin: 0 0 0 2em;
+}
+
+#linkColumn > a {
+    font-style: italic;
+    line-height: 2em;
+    color: black;
+}
+
+#contentColumn {
+    grid-area: content;
+}
+
+#contentColumn > a {
+    font-style: italic;
+    font-size: large;
+}
+
+#aboutSection > p {
+    font-size: larger;
+}
+
+#aboutSection {
+    background: lightgray;
+}
+
+@media (min-width: 1010px) {
+    #mainPage {
+        display: grid;
+        grid-template-areas: "links content";
+        grid-auto-columns: 20% auto;
+    }
+}
